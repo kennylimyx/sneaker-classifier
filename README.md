@@ -27,7 +27,7 @@ With this, we also hope to help buyers inform themselves and to stay away from c
 ### Executive Summary
 To combat the increasingly lucrative business of counterfeit sneakers, due to the rise of a sneaker cult following, the goal was to train a Convolutional Neural Network model to classify 2 binary outcome: Authentic or Replica sneakers.
 
-Web scraping was performed to collect a dataset consisting of approximately 20,000 images. The [Data Scraping notebook](./book1_data_scrapping_cleaning.ipynb) can be run periodically to obtain more data over time. Eventually, we came up with a 53/47% split between authentic and replica sneakers respectively.
+Web scraping was performed to collect a dataset consisting of approximately 20,000 images. The [Data Scraping notebook](./codes/book1_data_scrapping_cleaning.ipynb) can be run periodically to obtain more data over time. Eventually, we came up with a 53/47% split between authentic and replica sneakers respectively.
 
 As the replicas become more and more accurate to the orignals, the shade of colour and size/shape of details (logos, silhouette) on the sneakers are especially important in our case. The choice was made to maintain the RGB (coloured) and aspect ratios of the images, in the preprocessing of the images
 
@@ -38,10 +38,10 @@ Overall, there are still areas of improvement but moving forward the first step 
 ---
 
 ### Notebooks:
-- [Data Scrapping and Cleaning](./book1_data_scrapping_cleaning.ipynb)
-- [Image Selection](./book2a_img_selection.ipynb)
-- [Image Preprocessing](./book2b_img_preprocessing.ipynb)
-- [Modeling and Recommendations](./book3_preprocesing_modeling_recommendations.ipynb)
+- [Data Scrapping and Cleaning](./codes/book1_data_scrapping_cleaning.ipynb)
+- [Image Selection](./codes/book2a_img_selection.ipynb)
+- [Image Preprocessing](./codes/book2b_img_preprocessing.ipynb)
+- [Modeling and Recommendations](./codes/book3_preprocesing_modeling_recommendations.ipynb)
 
 ---
 
@@ -51,7 +51,7 @@ For this project, there will be 3 components:
 - This README file that provides an introduction to and overview of your project.
 - 1 x Presentation slides in pdf format
 
-You can find these here: https://github.com/kennylimyx/capstone
+You can find these here: https://github.com/kennylimyx/sneaker-classifier
 
 ---
 
@@ -63,7 +63,7 @@ You can find these here: https://github.com/kennylimyx/capstone
 
 ---
 ### Conclusions and Recommendations
-Our problem statement was to be able to identify authentic vs replicas sneakers in order to combat counterfeit goods. We eventually achieved an ROCAUC score of 85% which is not the best but a good starting point.
+Our problem statement was to be able to identify authentic vs replicas sneakers in order to combat counterfeit goods. We eventually achieved an ROCAUC score of 86% which is not the best but a good starting point.
 
 Moving forward: Firstly, I will be looking at a web deployment for this classifier. This will help us collate more data and improve the model. Secondly, we can also include images of size tags, receipts and boxes which are frequently used by sneaker authenticators to identify fakes. Lastly, there is a limitation of using images online to authenticate sneakers which is the sense of smell. Smelling the glue in sneakers is often a strong litmus test in identifying replicas.
 
