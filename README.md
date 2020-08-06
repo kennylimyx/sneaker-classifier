@@ -1,4 +1,4 @@
-#GA DSI15 Capstone Project: Classifying Authentic and Replica Sneakers
+# GA DSI15 Capstone Project: Classifying Authentic and Replica Sneakers
 
 ---
 
